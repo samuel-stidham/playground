@@ -7,7 +7,7 @@ env:
     sh: git describe --tags --always --dirty
   IMAGE_NAME: "{{ .BIN }}:{{ .LOCAL_VERSION }}"
   TEST_IMAGE_NAME: "{{ .BIN }}-test:{{ .LOCAL_VERSION }}"
-  GO_VERSION: 1.22
+  GO_VERSION: 1.26
   GO_CONTAINER: "golang:{{ .GO_VERSION }}"
 
 tasks:
